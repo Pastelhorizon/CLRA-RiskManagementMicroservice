@@ -30,7 +30,7 @@ public class RiskController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(RiskController.class);
 
-	@RequestMapping(path = "/risk/health", method = RequestMethod.GET)
+	@RequestMapping(path = "/", method = RequestMethod.GET)
 	public ResponseEntity<?> healthCheckup() {
 		LOGGER.info("AWS Health Check");
 		return new ResponseEntity<>("", HttpStatus.OK);
